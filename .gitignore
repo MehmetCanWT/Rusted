@@ -10,7 +10,19 @@
 *.suo
 *.nupkg
 *.snupkg
+# Native Binaries & Compiled Runtimes (Download pre-compiled release from Nexus / CurseForge)
+**/runtimes/
+*.so
+*.dll
+*.dylib
+*.pdb
+
+# Distribution Archives & Packages
 *.zip
+**/*.zip
+*.tar.gz
+*.7z
+*.rar
 
 # Node / TypeScript / Vite artifacts
 **/node_modules/

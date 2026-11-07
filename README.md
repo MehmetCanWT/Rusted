@@ -12,6 +12,22 @@
 
 ---
 
+## 📥 Download & Installation
+
+> [!TIP]
+> **For Players & Modding**: Pre-compiled, ready-to-play mod packages are distributed exclusively on official mod platforms:
+> - **[Nexus Mods (Official Page)](#)**
+> - **[CurseForge (Official Page)](#)**
+>
+> **Installation Steps:**
+> 1. Download the latest release `.zip` from Nexus Mods or CurseForge.
+> 2. Extract the archive into your `Stardew Valley/Mods/` folder (requires SMAPI 4.0+).
+> 3. Launch the game via SMAPI. Press **F8** in-game or on the title screen to open the RustedUI Control Panel.
+>
+> *(The GitHub repository hosts the source code for building, contributing, and developing dependent mods).*
+
+---
+
 ## ✨ Key Features
 
 - **🦀 Zero-GC Native Rust UI Engine (`crates/rusted-core`)**:
