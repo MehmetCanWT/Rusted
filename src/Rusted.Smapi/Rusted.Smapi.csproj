@@ -11,6 +11,7 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <EnableHarmony>false</EnableHarmony>
     <GamePath>/home/mehmetcan/.local/share/Steam/steamapps/common/Stardew Valley</GamePath>
+    <ModFolderName>RustedUI</ModFolderName>
     <DeployModFolderName>RustedUI</DeployModFolderName>
   </PropertyGroup>
 

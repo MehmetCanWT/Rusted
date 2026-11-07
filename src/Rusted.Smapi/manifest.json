@@ -6,5 +6,7 @@
   "UniqueID": "Mehmetcan.RustedUI",
   "EntryDll": "Rusted.Smapi.dll",
   "MinimumApiVersion": "4.0.0",
-  "UpdateKeys": []
+  "UpdateKeys": [
+    "GitHub:MehmetCanWT/Rusted"
+  ]
 }
