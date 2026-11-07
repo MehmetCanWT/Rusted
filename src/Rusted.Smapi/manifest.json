@@ -7,6 +7,8 @@
   "EntryDll": "Rusted.Smapi.dll",
   "MinimumApiVersion": "4.0.0",
   "UpdateKeys": [
+    "Nexus:55176",
+    "CurseForge:1789695",
     "GitHub:MehmetCanWT/Rusted"
   ]
 }

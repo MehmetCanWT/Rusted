@@ -16,8 +16,8 @@
 
 > [!TIP]
 > **For Players & Modding**: Pre-compiled, ready-to-play mod packages are distributed exclusively on official mod platforms:
-> - **[Nexus Mods (Official Page)](#)**
-> - **[CurseForge (Official Page)](#)**
+> - **[Nexus Mods (Official Page)](https://www.nexusmods.com/stardewvalley/mods/55176)**
+> - **[CurseForge (Official Page)](https://www.curseforge.com/stardewvalley/mods/1789695)**
 >
 > **Installation Steps:**
 > 1. Download the latest release `.zip` from Nexus Mods or CurseForge.
