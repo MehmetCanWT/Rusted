@@ -1,0 +1,11 @@
+{
+  "name": "@rusted-ui/tsx-components",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "React/Vite JSX/TSX Component Authoring & Shadcn/Lucide Design System for RustedUI",
+  "scripts": {
+    "build": "node scripts/build-tsx.mjs",
+    "watch": "node scripts/build-tsx.mjs --watch"
+  }
+}

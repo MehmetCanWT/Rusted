@@ -1,0 +1,138 @@
+<!-- Auto-generated from ui-tsx JSX/TSX Component Pipeline -->
+<div class="w-full h-full flex flex-col justify-center items-center">
+    <div id="test_lab_window" class="flex flex-col w-960 h-auto sdv-box gap-3">
+        <div class="flex flex-row justify-between items-center w-full gap-2">
+            <banner class="sdv-parchment flex-row items-center gap-2">
+                <icon name="code" class="lucide-icon lucide-md" />
+                <span class="font-dialogue text-sdv-brown shadow">Test Lab</span>
+            </banner>
+            <div class="flex flex-row items-center gap-2 shrink-0">
+                <tab id="tab_all" active="true" on:click="select_tab_all" tooltip="Split View: Show both Inputs and Inventory panels">Split</tab>
+                <tab id="tab_1" on:click="select_tab_1" tooltip="Tab 1: Focus on Interactive Inputs &amp; Controls">Inputs</tab>
+                <tab id="tab_2" on:click="select_tab_2" tooltip="Tab 2: Focus on Inventory Slots, Icons &amp; ScrollView">Inventory</tab>
+                <button id="btn_toggle_mode" class="sdv-btn" on:click="toggle_mode" tooltip="Switch between TSX/HTML Template and GPUI C# Fluent Builder">C# Mode</button>
+                <close-button id="btn_close" on:click="close_menu" tooltip="Close [ESC]" />
+            </div>
+        </div>
+        <div class="flex flex-col w-full px-3 py-2 sdv-panel gap-2">
+            <div class="flex flex-row items-center justify-between w-full gap-2">
+                <div class="flex flex-row items-center gap-2 shrink-0">
+                    <icon name="palette" class="lucide-icon lucide-md" />
+                    <span id="lbl_active_theme" class="font-small text-sdv-dark">Theme: Pelican Classic</span>
+                </div>
+                <span id="lbl_mod_ram_cpu" class="font-small text-sdv-brown shrink-0">Mod CPU: 0.1% | Rust RAM: 42 KB</span>
+            </div>
+            <div class="flex flex-row items-center justify-between w-full gap-2">
+                <button id="btn_theme_0" class="sdv-btn flex-1" on:click="theme_pelican" tooltip="Pelican Classic: Vanilla Stardew Wooden and Parchment 9-Slice Theme">Pelican</button>
+                <button id="btn_theme_1" class="sdv-btn flex-1" on:click="theme_zinc" tooltip="Shadcn Zinc Dark: Modern High-Contrast Dark Mode (#09090B / #18181B)">Zinc Dark</button>
+                <button id="btn_theme_2" class="sdv-btn flex-1" on:click="theme_arcane" tooltip="Wizard Arcane: Deep Violet and Starlight Gold Theme (#0F081D / #A855F7)">Arcane</button>
+                <button id="btn_theme_3" class="sdv-btn flex-1" on:click="theme_joja" tooltip="JojaCorp Blue: Industrial Cyber-Blue Theme (#0F172A / #38BDF8)">JojaCorp</button>
+                <button id="btn_theme_4" class="sdv-btn flex-1" on:click="theme_junimo" tooltip="Junimo Forest: Organic Emerald and Dewdrop Theme (#14261C / #86EFAC)">Junimo</button>
+            </div>
+            <div class="flex flex-row items-center justify-between w-full gap-2">
+                <button id="btn_theme_5" class="sdv-btn flex-1" on:click="theme_catppuccin" tooltip="Catppuccin Mocha: Soothing Pastel Dark Theme (#1E1E2E / #CBA6F7)">Catppuccin</button>
+                <button id="btn_theme_6" class="sdv-btn flex-1" on:click="theme_tokyonight" tooltip="Tokyo Night: Clean Neon-Lit Downtown Tokyo Theme (#1A1B26 / #7AA2F7)">Tokyo Night</button>
+                <button id="btn_theme_7" class="sdv-btn flex-1" on:click="theme_dracula" tooltip="Dracula: Iconic Vampire Dark Palette (#282A36 / #FF79C6 / #BD93F9)">Dracula</button>
+                <button id="btn_theme_8" class="sdv-btn flex-1" on:click="theme_nord" tooltip="Nord Polar: Arctic Frost Bluish-Grey Palette (#2E3440 / #88C0D0)">Nord Polar</button>
+                <button id="btn_theme_9" class="sdv-btn flex-1" on:click="theme_cyberpunk" tooltip="Cyberpunk Neon: High-Voltage Night City Palette (#0A0616 / #FCEE0A / #00F0FF)">Cyberpunk</button>
+            </div>
+        </div>
+        <hr class="sdv-divider" />
+        <div class="flex flex-row gap-4 w-full">
+            <panel id="panel_tab_1" class="flex flex-col flex-1 gap-3 sdv-panel">
+                <div class="flex flex-row items-center gap-2 w-full">
+                    <icon name="sliders" class="lucide-icon lucide-md" />
+                    <span class="font-dialogue text-sdv-brown">1. Interactive Controls</span>
+                </div>
+                <div class="flex flex-col gap-1 w-full">
+                    <div class="flex flex-row justify-between items-center w-full">
+                        <span class="font-small text-sdv-dark">Draggable Slider &amp; Bar:</span>
+                        <span id="lbl_slider_val" class="font-small text-sdv-brown">80 / 100</span>
+                    </div>
+                    <slider id="sld_energy" value="80" max="100" class="w-full" on:click="slider_changed" tooltip="Drag with left mouse button to adjust value!" />
+                    <progress-bar id="bar_energy" value="80" max="100" class="w-full h-5" tooltip="Synchronized Progress Bar" />
+                </div>
+                <div class="flex flex-col gap-1 w-full">
+                    <span class="font-small text-sdv-dark">Keyboard Text Input &amp; Trash:</span>
+                    <div class="flex flex-row items-center gap-2 w-full">
+                        <text-input id="inp_search" class="flex-1" on:click="focus_search" tooltip="Click and type on your keyboard!">Hello RustedUI!</text-input>
+                        <trash-button id="btn_clear_input" on:click="clear_input" tooltip="Clear text input (Trashcan sound)" />
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1 w-full">
+                    <div class="flex flex-row justify-between items-center w-full">
+                        <span class="font-small text-sdv-dark">Friendship Hearts:</span>
+                        <span id="lbl_hearts_val" class="font-small text-sdv-brown">8 / 10 Hearts</span>
+                    </div>
+                    <div class="flex flex-row items-center justify-between w-full gap-2">
+                        <arrow-left id="btn_heart_minus" on:click="heart_minus" tooltip="Decrease hearts (-1)" />
+                        <heart-rating id="heart_meter" hearts="8" max-hearts="10" tooltip="Dynamic Friendship Heart Meter" />
+                        <arrow-right id="btn_heart_plus" on:click="heart_plus" tooltip="Increase hearts (+1)" />
+                    </div>
+                </div>
+                <div class="flex flex-row items-center justify-between w-full gap-2">
+                    <div class="flex flex-row items-center gap-2">
+                        <switch id="chk_hud" checked="true" on:click="toggle_hud" tooltip="Shadcn Switch: Toggle HUD" />
+                        <span class="font-small text-sdv-dark">HUD</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-2">
+                        <checkbox id="chk_sound" checked="true" on:click="toggle_sound" tooltip="Vanilla Checkbox: Toggle UI Sounds" />
+                        <span class="font-small text-sdv-dark">SFX</span>
+                    </div>
+                    <coin-icon tooltip="Vanilla Coin Sprite" />
+                    <button id="btn_gold" class="sdv-btn" on:click="give_gold" tooltip="Add +500G">+500G</button>
+                </div>
+            </panel>
+            <panel id="panel_tab_2" class="flex flex-col flex-1 gap-3 sdv-panel">
+                <div class="flex flex-row items-center gap-2 w-full">
+                    <icon name="package" class="lucide-icon lucide-md" />
+                    <span class="font-dialogue text-sdv-brown">2. Slots, Icons &amp; Scroll</span>
+                </div>
+                <div class="flex flex-row gap-2 w-full justify-between">
+                    <item-slot id="slot_prismatic" item="74" count="7" quality="iridium" on:click="slot_prismatic" tooltip="Prismatic Shard (Iridium Quality) - Click to inspect!" />
+                    <item-slot id="slot_starfruit" item="268" count="24" quality="gold" on:click="slot_starfruit" tooltip="Starfruit (Gold Quality) - Click to inspect!" />
+                    <item-slot id="slot_iridium" item="337" count="50" quality="iridium" on:click="slot_iridium" tooltip="Iridium Bar (50 Stack) - Click to inspect!" />
+                    <item-slot id="slot_ancient" item="454" count="12" quality="silver" on:click="slot_ancient" tooltip="Ancient Fruit (Silver Quality) - Click to inspect!" />
+                    <item-slot id="slot_diamond" item="72" count="99" quality="iridium" on:click="slot_diamond" tooltip="Diamond (99 Stack) - Click to inspect!" />
+                </div>
+                <div class="flex flex-row items-center justify-between w-full gap-2">
+                    <div class="flex flex-row items-center gap-2">
+                        <icon name="sparkles" class="lucide-icon lucide-sm" />
+                        <icon name="shield" class="lucide-icon lucide-sm" />
+                        <icon name="sword" class="lucide-icon lucide-sm" />
+                        <icon name="flame" class="lucide-icon lucide-sm" />
+                        <icon name="terminal" class="lucide-icon lucide-sm" />
+                        <icon name="settings" class="lucide-icon lucide-sm" />
+                    </div>
+                    <div class="flex flex-row items-center gap-1">
+                        <badge variant="secondary" class="sdv-badge badge-secondary">Shadcn</badge>
+                        <badge variant="destructive" class="sdv-badge badge-destructive">Alert</badge>
+                    </div>
+                </div>
+                <span id="lbl_slot_info" class="font-small text-sdv-brown">Hover over any item slot or icon to test floating tooltips!</span>
+                <div class="flex flex-row justify-between items-center w-full">
+                    <span class="font-small text-sdv-dark">Clipped ScrollView (Wheel &amp; Arrows):</span>
+                    <div class="flex flex-row gap-2">
+                        <arrow-up id="btn_scroll_up" on:click="scroll_up" tooltip="Scroll Up" />
+                        <arrow-down id="btn_scroll_down" on:click="scroll_down" tooltip="Scroll Down" />
+                    </div>
+                </div>
+                <scroll-view id="log_scroll" class="w-full h-150 sdv-panel" tooltip="Scroll with the mouse wheel while hovering here!">
+                    <span class="font-small text-sdv-dark">[01] RustedUI Taffy v0.7 Flexbox &amp; Grid engine active.</span>
+                    <span class="font-small text-sdv-dark">[02] Hardware ScissorRectangle restores CullNone on PopClip.</span>
+                    <span class="font-small text-sdv-dark">[03] 10 Themes: Pelican, Zinc, Arcane, Joja, Junimo, Mocha, Tokyo, Dracula, Nord, Cyber.</span>
+                    <span class="font-small text-sdv-dark">[04] Per-Mod Theme Isolation: External mods keep own theme unless opted in.</span>
+                    <span class="font-small text-sdv-dark">[05] Theme-aware Floating Tooltips on HUD and all menus.</span>
+                    <span class="font-small text-sdv-dark">[06] React/Vite JSX/TSX Component Authoring Pipeline.</span>
+                    <span class="font-small text-sdv-dark">[07] OptionsSlider continuous drag &amp; keyboard TextInput.</span>
+                    <span id="lbl_ram_usage" class="font-small text-sdv-brown">[08] CPU: 0.1% | Rust UI RAM: 42 KB</span>
+                    <span id="lbl_render_time" class="font-small text-sdv-brown">[09] Render: 0.08ms | 0 Bytes GC</span>
+                </scroll-view>
+            </panel>
+        </div>
+        <div class="flex flex-row justify-between items-center w-full">
+            <button id="btn_back_credits" class="sdv-btn" on:click="open_credits" tooltip="Return to the Credits &amp; Architecture menu">&lt;- Back to Credits</button>
+            <span id="lbl_cmd_count" class="font-small text-sdv-muted">Draw Commands: 0 | Events: 0 | Mode: TSX + Shadcn + Lucide</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/rusted-core",
+    "crates/rusted-bridge",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["mehmetcan"]
+
+[workspace.dependencies]
+taffy = { version = "0.7", default-features = false, features = ["std", "flexbox", "grid", "block_layout", "taffy_tree"] }
+slotmap = "1.0"
+bitflags = "2.6"
+quick-xml = "0.37"

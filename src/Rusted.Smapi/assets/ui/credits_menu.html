@@ -1,0 +1,59 @@
+<!-- Auto-generated from ui-tsx JSX/TSX Component Pipeline -->
+<div class="w-full h-full flex flex-col justify-center items-center">
+    <div id="credits_window" class="flex flex-col w-960 h-auto sdv-box gap-3">
+        <div class="flex flex-row justify-between items-center w-full gap-3">
+            <banner class="sdv-parchment flex-row items-center gap-2">
+                <icon name="sparkles" class="lucide-icon lucide-md" />
+                <span class="font-dialogue text-sdv-brown shadow">RustedUI - Credits &amp; Architecture</span>
+            </banner>
+            <close-button id="btn_close" on:click="close_menu" tooltip="Close [ESC]" />
+        </div>
+        <div class="flex flex-col w-full px-3 py-2 sdv-panel gap-2">
+            <div class="flex flex-row items-center justify-between w-full gap-2">
+                <div class="flex flex-row items-center gap-2 shrink-0">
+                    <icon name="palette" class="lucide-icon lucide-md" />
+                    <span id="lbl_active_theme" class="font-small text-sdv-dark">Theme: Pelican Classic</span>
+                </div>
+                <span id="lbl_mod_ram_cpu" class="font-small text-sdv-brown shrink-0">Mod CPU: 0.1% | Rust RAM: 42 KB</span>
+            </div>
+            <div class="flex flex-row items-center justify-between w-full gap-2">
+                <button id="btn_theme_0" class="sdv-btn flex-1" on:click="theme_pelican" tooltip="Pelican Classic: Vanilla Stardew Wooden and Parchment 9-Slice Theme">Pelican</button>
+                <button id="btn_theme_1" class="sdv-btn flex-1" on:click="theme_zinc" tooltip="Shadcn Zinc Dark: Modern High-Contrast Dark Mode (#09090B / #18181B)">Zinc Dark</button>
+                <button id="btn_theme_2" class="sdv-btn flex-1" on:click="theme_arcane" tooltip="Wizard Arcane: Deep Violet and Starlight Gold Theme (#0F081D / #A855F7)">Arcane</button>
+                <button id="btn_theme_3" class="sdv-btn flex-1" on:click="theme_joja" tooltip="JojaCorp Blue: Industrial Cyber-Blue Theme (#0F172A / #38BDF8)">JojaCorp</button>
+                <button id="btn_theme_4" class="sdv-btn flex-1" on:click="theme_junimo" tooltip="Junimo Forest: Organic Emerald and Dewdrop Theme (#14261C / #86EFAC)">Junimo</button>
+            </div>
+            <div class="flex flex-row items-center justify-between w-full gap-2">
+                <button id="btn_theme_5" class="sdv-btn flex-1" on:click="theme_catppuccin" tooltip="Catppuccin Mocha: Soothing Pastel Dark Theme (#1E1E2E / #CBA6F7)">Catppuccin</button>
+                <button id="btn_theme_6" class="sdv-btn flex-1" on:click="theme_tokyonight" tooltip="Tokyo Night: Clean Neon-Lit Downtown Tokyo Theme (#1A1B26 / #7AA2F7)">Tokyo Night</button>
+                <button id="btn_theme_7" class="sdv-btn flex-1" on:click="theme_dracula" tooltip="Dracula: Iconic Vampire Dark Palette (#282A36 / #FF79C6 / #BD93F9)">Dracula</button>
+                <button id="btn_theme_8" class="sdv-btn flex-1" on:click="theme_nord" tooltip="Nord Polar: Arctic Frost Bluish-Grey Palette (#2E3440 / #88C0D0)">Nord Polar</button>
+                <button id="btn_theme_9" class="sdv-btn flex-1" on:click="theme_cyberpunk" tooltip="Cyberpunk Neon: High-Voltage Night City Palette (#0A0616 / #FCEE0A / #00F0FF)">Cyberpunk</button>
+            </div>
+        </div>
+        <hr class="sdv-divider" />
+        <panel class="flex flex-col gap-3 sdv-panel w-full">
+            <div class="flex flex-col gap-2 w-full">
+                <span class="font-dialogue text-sdv-brown">Rusted (RustedUI) Core Stack</span>
+                <div class="flex flex-row gap-2 shrink-0">
+                    <badge variant="primary" class="sdv-badge badge-primary">Rust + Taffy</badge>
+                    <badge variant="success" class="sdv-badge badge-success">Shadcn + Lucide</badge>
+                    <badge variant="secondary" class="sdv-badge badge-secondary">React TSX</badge>
+                </div>
+            </div>
+            <span class="font-small text-sdv-dark">- Layout &amp; Arena Engine: Rust + SlotMap + Taffy v0.7 Flexbox/Grid</span>
+            <span class="font-small text-sdv-dark">- Design System: 5 Live Themes (Pelican, Shadcn Zinc Dark, Arcane, Joja, Junimo) + Lucide Pixel Atlas</span>
+            <span class="font-small text-sdv-dark">- Authoring Layers: React/Vite JSX/TSX Component Compiler + HTML/Tailwind Hot-Reload + GPUI C# Fluent API</span>
+            <span class="font-small text-sdv-dark">- Zero-GC FFI ABI: Blittable RenderSliceView &amp; EventSliceView (0 Bytes GC/frame)</span>
+            <hr class="sdv-divider" />
+            <div class="flex flex-row items-center gap-3 w-full">
+                <heart-rating id="credits_hearts" hearts="10" max-hearts="10" />
+                <span class="font-small text-sdv-brown flex-1">Crafted for the Stardew Valley 1.6+ modding community.</span>
+            </div>
+        </panel>
+        <div class="flex flex-row justify-between items-center gap-4 w-full">
+            <button id="btn_back_main" class="sdv-btn" on:click="open_main_menu" tooltip="Return to the Control Panel">&lt;- Back to Control Panel</button>
+            <button id="btn_open_test_lab" class="sdv-btn" on:click="open_feature_test" tooltip="Open the interactive lab testing all RustedUI widgets">Open All-Features Test Lab -&gt;</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+<!-- Auto-generated from ui-tsx JSX/TSX Component Pipeline -->
+<div class="w-full h-full flex flex-col justify-center items-center">
+    <div id="main_window" class="flex flex-col w-960 h-auto sdv-box gap-3">
+        <div class="flex flex-row justify-between items-center w-full gap-3">
+            <banner class="sdv-parchment flex-row items-center gap-2">
+                <icon name="cpu" class="lucide-icon lucide-md" />
+                <span class="font-dialogue text-sdv-brown shadow">RustedUI - Control Panel</span>
+            </banner>
+            <div class="flex flex-row items-center gap-2 shrink-0">
+                <badge id="bdg_layer" variant="success" class="sdv-badge badge-success">TSX + Shadcn</badge>
+                <close-button id="btn_close" on:click="close_menu" tooltip="Close menu [ESC]" />
+            </div>
+        </div>
+        <div class="flex flex-col w-full px-3 py-2 sdv-panel gap-2">
+            <div class="flex flex-row items-center justify-between w-full gap-2">
+                <div class="flex flex-row items-center gap-2 shrink-0">
+                    <icon name="palette" class="lucide-icon lucide-md" />
+                    <span id="lbl_active_theme" class="font-small text-sdv-dark">Theme: Pelican Classic</span>
+                </div>
+                <span id="lbl_mod_ram_cpu" class="font-small text-sdv-brown shrink-0">Mod CPU: 0.1% | Rust RAM: 42 KB</span>
+            </div>
+            <div class="flex flex-row items-center justify-between w-full gap-2">
+                <button id="btn_theme_0" class="sdv-btn flex-1" on:click="theme_pelican" tooltip="Pelican Classic: Vanilla Stardew Wooden and Parchment 9-Slice Theme">Pelican</button>
+                <button id="btn_theme_1" class="sdv-btn flex-1" on:click="theme_zinc" tooltip="Shadcn Zinc Dark: Modern High-Contrast Dark Mode (#09090B / #18181B)">Zinc Dark</button>
+                <button id="btn_theme_2" class="sdv-btn flex-1" on:click="theme_arcane" tooltip="Wizard Arcane: Deep Violet and Starlight Gold Theme (#0F081D / #A855F7)">Arcane</button>
+                <button id="btn_theme_3" class="sdv-btn flex-1" on:click="theme_joja" tooltip="JojaCorp Blue: Industrial Cyber-Blue Theme (#0F172A / #38BDF8)">JojaCorp</button>
+                <button id="btn_theme_4" class="sdv-btn flex-1" on:click="theme_junimo" tooltip="Junimo Forest: Organic Emerald and Dewdrop Theme (#14261C / #86EFAC)">Junimo</button>
+            </div>
+            <div class="flex flex-row items-center justify-between w-full gap-2">
+                <button id="btn_theme_5" class="sdv-btn flex-1" on:click="theme_catppuccin" tooltip="Catppuccin Mocha: Soothing Pastel Dark Theme (#1E1E2E / #CBA6F7)">Catppuccin</button>
+                <button id="btn_theme_6" class="sdv-btn flex-1" on:click="theme_tokyonight" tooltip="Tokyo Night: Clean Neon-Lit Downtown Tokyo Theme (#1A1B26 / #7AA2F7)">Tokyo Night</button>
+                <button id="btn_theme_7" class="sdv-btn flex-1" on:click="theme_dracula" tooltip="Dracula: Iconic Vampire Dark Palette (#282A36 / #FF79C6 / #BD93F9)">Dracula</button>
+                <button id="btn_theme_8" class="sdv-btn flex-1" on:click="theme_nord" tooltip="Nord Polar: Arctic Frost Bluish-Grey Palette (#2E3440 / #88C0D0)">Nord Polar</button>
+                <button id="btn_theme_9" class="sdv-btn flex-1" on:click="theme_cyberpunk" tooltip="Cyberpunk Neon: High-Voltage Night City Palette (#0A0616 / #FCEE0A / #00F0FF)">Cyberpunk</button>
+            </div>
+        </div>
+        <hr class="sdv-divider" />
+        <div class="flex flex-row gap-4 w-full">
+            <panel class="flex flex-col flex-1 gap-3 sdv-panel">
+                <div class="flex flex-row items-center gap-2 w-full">
+                    <icon name="sliders" class="lucide-icon lucide-md" />
+                    <span class="font-dialogue text-sdv-brown">1. Telemetry &amp; HUD</span>
+                </div>
+                <span id="lbl_render_time" class="font-small text-sdv-dark">Render Time: 0.08 ms (0 Bytes GC)</span>
+                <span id="lbl_cmd_count" class="font-small text-sdv-dark">Draw Commands: 0 | Events: 0</span>
+                <span id="lbl_ram_usage" class="font-small text-sdv-brown">CPU: 0.1% | Rust UI RAM: 42 KB</span>
+                <hr class="sdv-divider" />
+                <div class="flex flex-row items-center justify-between w-full gap-2">
+                    <span class="font-small text-sdv-dark">In-Game Mini-HUD Overlay</span>
+                    <switch id="chk_hud" checked="true" on:click="toggle_hud" tooltip="Toggle the top-left RustedUI HUD overlay" />
+                </div>
+                <div class="flex flex-row items-center justify-between w-full gap-2">
+                    <span class="font-small text-sdv-dark">Vanilla UI Sound Effects</span>
+                    <switch id="chk_sound" checked="true" on:click="toggle_sound" tooltip="Toggle vanilla Stardew UI sound cues" />
+                </div>
+                <div class="flex flex-col gap-1 w-full">
+                    <div class="flex flex-row justify-between items-center w-full">
+                        <span class="font-small text-sdv-dark">HUD Progress Bar:</span>
+                        <span id="lbl_energy_val" class="font-small text-sdv-brown">80 / 100</span>
+                    </div>
+                    <progress-bar id="bar_energy" value="80" max="100" class="w-full h-6" />
+                </div>
+            </panel>
+            <panel class="flex flex-col flex-1 gap-3 sdv-panel">
+                <div class="flex flex-row items-center gap-2 w-full">
+                    <icon name="layers" class="lucide-icon lucide-md" />
+                    <span class="font-dialogue text-sdv-brown">2. Menu Navigation</span>
+                </div>
+                <span class="font-small text-sdv-dark">Open the Credits &amp; Architecture screen or launch the All-Features Test Lab with 5 live themes.</span>
+                <div class="flex flex-row items-center gap-2 w-full">
+                    <coin-icon />
+                    <span id="lbl_slot_info" class="font-small text-sdv-brown flex-1">Ready: Click below to open Credits or add +500G!</span>
+                </div>
+                <div class="flex flex-col gap-2 w-full">
+                    <button id="btn_open_credits" class="sdv-btn w-full" on:click="open_credits" tooltip="Open RustedUI Credits &amp; Architecture menu">Credits &amp; About -&gt;</button>
+                    <button id="btn_open_test_direct" class="sdv-btn w-full" on:click="open_feature_test" tooltip="Open the All-Features Test Lab directly">Open All-Features Test Lab -&gt;</button>
+                    <button id="btn_give_gold" class="sdv-btn w-full" on:click="give_gold" tooltip="Add 500G to the farmer's wallet">+500G Add Gold</button>
+                </div>
+            </panel>
+        </div>
+        <div class="flex flex-row justify-between items-center w-full gap-2">
+            <span id="lbl_hotreload_hint" class="font-small text-sdv-muted flex-1">Status: Compiled from TSX + Tailwind + Shadcn + Lucide pipeline.</span>
+            <span class="font-small text-sdv-brown">[ESC: Close]</span>
+        </div>
+    </div>
+</div>

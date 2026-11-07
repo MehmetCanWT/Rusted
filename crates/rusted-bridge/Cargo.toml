@@ -1,0 +1,15 @@
+[package]
+name = "rusted-bridge"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "rusted_bridge"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rusted-core = { path = "../rusted-core" }
+taffy.workspace = true
+slotmap.workspace = true
+bitflags.workspace = true

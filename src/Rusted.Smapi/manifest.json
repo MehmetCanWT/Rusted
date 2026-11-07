@@ -1,0 +1,10 @@
+{
+  "Name": "RustedUI Framework & Showcase",
+  "Author": "mehmetcan",
+  "Version": "0.1.0",
+  "Description": "Rust-powered, zero-GC, cross-platform (Windows, Linux, Proton, macOS) in-game UI & HUD engine for Stardew Valley with Tailwind CSS and GPUI-style Fluent Builder.",
+  "UniqueID": "Mehmetcan.RustedUI",
+  "EntryDll": "Rusted.Smapi.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}

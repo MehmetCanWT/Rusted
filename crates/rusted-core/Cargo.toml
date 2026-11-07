@@ -1,0 +1,11 @@
+[package]
+name = "rusted-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+taffy.workspace = true
+slotmap.workspace = true
+bitflags.workspace = true
+quick-xml.workspace = true
