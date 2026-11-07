@@ -11,73 +11,86 @@
 
 ---
 
-## 🌟 What is RustedUI?
+## Description
 
-**RustedUI** is an ultra-fast, zero-lag in-game user interface framework and visual showcase for **Stardew Valley 1.6+ (SMAPI 4.0+)**.
+**RustedUI** is an ultra-fast, zero-lag in-game user interface framework, HUD overlay, and visual showcase built specifically for **Stardew Valley 1.6+ (SMAPI 4.0+)**.
 
-Traditional UI mods in C# frequently suffer from garbage collection (GC) micro-stutters and frame spikes when drawing detailed menus or HUD overlays. **RustedUI eliminates this completely**: by computing all layout, styling, and text-wrapping inside a native **Rust engine (powered by Taffy v0.7 Flexbox & Grid)** with arena memory and 0 bytes of C# garbage collection per frame, it outputs raw MonoGame `SpriteBatch` draw commands in microseconds (**~0.03–0.08 ms**).
+In heavily modded Stardew Valley setups, traditional C# UI mods frequently cause garbage collection (GC) micro-stutters and sudden FPS drops when rendering extensive menus or floating HUD elements. **RustedUI completely solves this problem**:
+- It delegates all layout math, styling, and text wrapping to an embedded native **Rust engine powered by Taffy v0.7** (CSS Flexbox & Grid).
+- Running with arena-allocated memory and **0 bytes of managed C# garbage collection per frame**, RustedUI synthesizes and passes flat command buffers directly to MonoGame's hardware `SpriteBatch` in microseconds (**~0.03–0.08 ms**).
 
-Whether you are a **player** who wants beautiful, customizable HUDs and menus that feel like native Stardew Valley, or a **mod author** looking to build cutting-edge menus using HTML, Tailwind CSS, React/TSX, or C# Fluent Builders, RustedUI is built for you!
+Whether you are a **player** looking for a polished, themeable telemetry overlay and responsive menus, or a **mod author** seeking to build custom interfaces using HTML + Tailwind CSS, React/TSX, or a fluent C# builder, RustedUI provides the modern foundation you need.
 
 ---
 
-## ✨ Key Features at a Glance
+## Installation instructions
 
-- **🦀 Zero Garbage Collection Overhead:** Pure 60/120+ FPS gameplay with 0 bytes of managed C# allocations per frame during rendering.
-- **🎨 10 Live Color Themes:**
+Follow these simple steps to install RustedUI:
+
+1. **Prerequisites:** Make sure you have installed the latest version of [SMAPI](https://www.nexusmods.com/stardewvalley/mods/2400) (version 4.0.0 or higher) for Stardew Valley 1.6+.
+2. **Download:** Download the **RustedUI** archive using your favorite mod manager (**Vortex**) or choose **Manual Download**.
+3. **Extract:** If installing manually, extract the downloaded zip file into your `Stardew Valley/Mods/` directory so you have a `Mods/RustedUI/` folder containing `manifest.json`.
+4. **Launch & Verify:** Launch the game through SMAPI. Press **F8** anywhere (in-game or on the Title Screen) to open the RustedUI Control Panel!
+5. **Keybinds:**
+   - **F8:** Open / close the RustedUI Control Panel and Feature Test Lab.
+   - **F7:** Toggle the in-game Mini-HUD overlay on / off (Disabled by default).
+   - **ESC / Right-Click:** Close active RustedUI menus.
+
+---
+
+## Main features
+
+- **🦀 Zero Garbage Collection Overhead:** 0 bytes of managed C# heap allocations per frame while rendering. Keeps your frame pacing rock-solid at 60 / 120+ FPS.
+- **🎨 10 Instant In-Game Themes:** Switch instantaneously between 10 built-in palettes:
   - **Pelican Classic:** Authentic vanilla Stardew wooden and parchment 9-slice boxes.
-  - **Shadcn Zinc Dark:** Ultra-clean modern dark mode (`#09090B` / `#18181B`).
+  - **Shadcn Zinc Dark:** Minimalist modern high-contrast dark mode (`#09090B` / `#18181B`).
   - **Wizard Arcane:** Mystic deep violet and starlight gold.
-  - **JojaCorp Blue:** Industrial corporate cobalt and cyan.
+  - **JojaCorp Blue:** Industrial corporate cobalt and electric cyan.
   - **Junimo Forest:** Organic emerald and dewdrop green.
-  - **Catppuccin Mocha, Tokyo Night, Dracula, Nord & Cyberpunk Neon:** Vibrant aesthetic palettes!
-- **💬 Theme-Aware Floating Tooltips:** Hovering over any HUD element or item slot shows an interactive tooltip styled to match your selected theme.
-- **🔒 Per-Mod Theme Isolation:** Third-party mods keep their own custom visual branding without being overridden by global theme changes (unless explicitly opted in).
-- **🎮 Steam Deck & Gamepad Ready:** Native controller support, full-screen UI scaling, and proton compatibility with no third-party overlay hooks.
-- **📦 Rich Built-In Widget Catalog:** Inventory item slots with quality stars, friendship heart meters, coin counters, progress bars, text input with keyboard support, smooth sliders, and hardware-clipped scroll views.
-- **📐 Ergonomic Modder Tooling:** Build menus with **HTML + Tailwind CSS** (with live in-game hot-reload), **React/Vite TSX** ahead-of-time components, or a type-safe **GPUI-style C# Fluent Builder**.
+  - **Catppuccin Mocha, Tokyo Night, Dracula, Nord & Cyberpunk Neon:** Popular aesthetic themes!
+- **💬 Theme-Aware Floating Tooltips:** Hovering over any HUD element or item slot renders an interactive tooltip styled with the active theme tokens.
+- **🔒 Per-Mod Theme Isolation:** Third-party mods retain their unique aesthetic without being forcefully overridden by global theme changes.
+- **🎮 Gamepad & Steam Deck Ready:** Full controller support with snap navigation and out-of-the-box Proton / Linux compatibility.
+- **📦 Rich Built-In Widget Catalog:** Ready-to-use widgets including inventory slots with item quality stars, friendship heart meters, coin counters, text inputs with keyboard typing, smooth sliders, switches, checkboxes, and hardware-clipped scroll views.
+- **📐 3 Flexible Authoring Workflows for Modders:**
+  1. **HTML + Tailwind CSS:** Author markup with hot-reload support (`assets/ui/`).
+  2. **React / Vite TSX:** Ahead-of-time component compilation (`ui-tsx/`).
+  3. **C# Fluent API:** Construct declarative trees programmatically in pure C# with `RustedContext`.
 
 ---
 
-## ⌨️ Default Keybinds
+## Requirements
 
-| Keybind | Action | Description |
-| :--- | :--- | :--- |
-| **F8** | **Open Control Panel** | Opens the RustedUI Control Panel, Theme Switcher, Audio Toggles, and Feature Test Lab. Can also be opened on the Title Screen! |
-| **F7** | **Toggle Mini-HUD** | Quickly shows or hides the in-game telemetry & quick-action overlay (Disabled by default). |
-| **ESC / Right-Click** | **Close Menu** | Closes active RustedUI menus and returns control to the game. |
+RustedUI is lightweight and self-contained:
 
----
-
-## 📦 Installation
-
-1. Install the latest version of [SMAPI (4.0.0 or higher)](https://www.nexusmods.com/stardewvalley/mods/2400).
-2. Download the **RustedUI** zip file using **Vortex** or **Manual Download**.
-3. If installing manually, extract the archive into your `Stardew Valley/Mods/` directory.
-4. Launch the game using SMAPI. Press **F8** in-game or on the title screen to verify installation!
-5. *(Optional)* If you have **Generic Mod Config Menu (GMCM)** installed, you can configure hotkeys and HUD visibility from the in-game settings menu.
+- **Required:**
+  - **Stardew Valley 1.6+** (Steam, GOG, or PC Game Pass).
+  - [SMAPI - Stardew Modding API](https://www.nexusmods.com/stardewvalley/mods/2400) (Version **4.0.0 or higher**).
+- **Optional:**
+  - [Generic Mod Config Menu (GMCM)](https://www.nexusmods.com/stardewvalley/mods/5098): If installed, allows you to configure HUD toggles, keybinds, and audio cues directly in Stardew Valley's in-game options.
+- **No External Runtimes Needed:**
+  - RustedUI includes self-contained native libraries (`librusted_bridge.so` for Linux/Deck and `rusted_bridge.dll` statically linked with `+crt-static` for Windows/Proton). No Visual C++ redistributable or Rust compiler installation is required.
 
 ---
 
-## 🛡️ Security & Native Binaries Disclosure
+## Shout outs
 
-RustedUI includes pre-compiled native libraries (`librusted_bridge.so` for Linux and `rusted_bridge.dll` for Windows / Steam Deck Proton).
+Special thanks and appreciation to the incredible creators and open-source projects that made RustedUI possible:
 
-> **Security Guarantees:**
-> - **Pure CPU Layout Math:** The native library performs strictly in-memory layout computations (Taffy Flexbox/Grid).
-> - **Zero Network / Zero OS Access:** It makes 0 network calls, touches no disk/file systems, and collects 0 telemetry.
-> - **No VC++ Redistributable Needed:** Compiled with static CRT (`+crt-static`) for 100% out-of-the-box Proton / Wine compatibility.
-> - **Public Source Code:** Fully open for audit on [GitHub](https://github.com/MehmetCanWT/Rusted).
+- **ConcernedApe (Eric Barone):** For creating Stardew Valley and giving the modding community endless inspiration and support with the 1.6 update.
+- **Pathoschild:** For SMAPI, `SMAPI.ModBuildConfig`, and countless years of dedicated leadership in Stardew Valley modding infrastructure.
+- **The Dioxus Labs Team:** For [Taffy](https://github.com/DioxusLabs/taffy), the blazing-fast Rust implementation of CSS Flexbox and CSS Grid.
+- **spacechase0:** For Generic Mod Config Menu (GMCM), the gold standard for in-game configuration.
+- **The Rust & MonoGame Communities:** For providing unmatched performance tooling and robust game engine foundations.
 
 ---
 
-## 📄 License & Permissions
+## License & Permissions
 
 RustedUI is distributed under the **RustedUI Source-Available Software License (v1.0)**:
-
 - **Free for Players:** 100% free to download, install, and enjoy.
-- **Free for Mod Authors:** You are free to use RustedUI as a library or dependency in your own Stardew Valley mods without paying any royalties or fees.
-- **Redistribution Restricted:** Re-hosting, mirror uploading, or commercial redistribution on third-party sites or paywalled services is strictly prohibited without an explicit commercial license agreement.
+- **Free for Mod Authors:** You are fully authorized and encouraged to use RustedUI as a library or dependency for your own Stardew Valley mods without any royalties or fees.
+- **Redistribution Restricted:** Direct re-hosting, mirror uploading, or commercial redistribution on third-party sites or paywalled services is strictly prohibited without an explicit commercial license agreement.
 
 ---
 
