@@ -192,6 +192,24 @@ SMAPI, oyunu başlatan oyunculara konsol üzerinde renkli bildirimlerle *"Şu mo
 
 ---
 
+### 2.6 İzinler ve Lisans Yapılandırması (Permissions & Licensing)
+Nexus Mods sayfa oluşturma formundaki **Permissions & Credits** sekmesinde şu seçenekleri işaretleyin:
+
+1. **Upload permission (Yeniden Yükleme İzni):**
+   - **Seçim:** `You are not allowed to upload this file to other sites under any circumstances` (İzinsiz başka sitelere yüklenemez).
+2. **Modification permission (Değiştirme İzni):**
+   - **Seçim:** `You must get permission from me before you are allowed to modify my files to improve it` (İzin alınmalıdır).
+3. **Conversion permission (Dönüştürme İzni):**
+   - **Seçim:** `You are not allowed to convert this file to work on other games under any circumstances`.
+4. **Asset use permission (Varlık ve Kütüphane İzni):**
+   - **Seçim:** `You are allowed to use RustedUI as a library/dependency for your own mods freely` (Mod yapımcıları için kütüphane olarak kullanımı tamamen serbest ve ücretsizdir).
+5. **Commercial / Paywall:**
+   - **Seçim:** `You are not allowed to sell this mod or bundle it into paywalled services under any circumstances`.
+6. **Lisans Adı:** `RustedUI Source-Available Software License (v1.0)`
+   - Açıklama: Mod yapımcıları kendi modlarında RustedUI'yi kütüphane ve bağımlılık olarak ücretsiz kullanabilir. Ancak RustedUI'nin bağımsız olarak başka sitelerde aynalanması, izinsiz yeniden dağıtılması veya ticari olarak satılması yasaktır; ticari yeniden dağıtım için yazarla lisans anlaşması ve telif ödemesi zorunludur.
+
+---
+
 ## 3. Nexus Mods Biçimlendirme Standartları (BBCode vs Markdown)
 
 ### 3.1 BBCode ve Markdown Desteği Karşılaştırması
@@ -439,7 +457,7 @@ Aşağıdaki kod bloğu, Nexus Mods açıklama editöründe **Source Code (`<>`)
 [size=3][b][color=#10B981]✦ ZERO GC ALLOCATION[/color] | [color=#60A5FA]✦ RUST TAFFY ENGINE[/color] | [color=#F59E0B]✦ 10 LIVE THEMES[/color] | [color=#A78BFA]✦ STEAM DECK READY[/color][/b][/size]
 
 [line]
-[url=https://github.com/mehmetcan/Rusted][img]https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github[/img][/url] [url=https://www.nexusmods.com/stardewvalley/mods/2400][img]https://img.shields.io/badge/Requires-SMAPI%204.0+-brightgreen?style=for-the-badge[/img][/url] [img]https://img.shields.io/badge/Stardew%20Valley-1.6+-orange?style=for-the-badge[/img] [img]https://img.shields.io/badge/License-MIT%2FApache-blue?style=for-the-badge[/img]
+[url=https://github.com/MehmetCanWT/Rusted][img]https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github[/img][/url] [url=https://www.nexusmods.com/stardewvalley/mods/2400][img]https://img.shields.io/badge/Requires-SMAPI%204.0+-brightgreen?style=for-the-badge[/img][/url] [img]https://img.shields.io/badge/Stardew%20Valley-1.6+-orange?style=for-the-badge[/img] [img]https://img.shields.io/badge/License-Source--Available%20(Free%20for%20Modders)-blue?style=for-the-badge[/img]
 [line]
 [/center]
 
@@ -608,7 +626,7 @@ Aşağıdaki şablon, GitHub Releases veya Nexus Mods'un gelecekteki olası Mark
 [![SMAPI 4.0+](https://img.shields.io/badge/SMAPI-4.0%2B-brightgreen.svg)](https://smapi.io)
 [![Stardew Valley 1.6+](https://img.shields.io/badge/Stardew%20Valley-1.6%2B-orange.svg)](https://stardewvalley.net)
 [![Rust 2024](https://img.shields.io/badge/Engine-Rust%20%2B%20Taffy-DEA584.svg)](https://github.com/DioxusLabs/taffy)
-[![License: MIT/Apache](https://img.shields.io/badge/License-MIT%2FApache-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Source--Available%20(Free%20for%20Modders)-blue.svg)](LICENSE)
 [![Steam Deck Verified](https://img.shields.io/badge/Steam%20Deck-Verified-10B981.svg)](#steam-deck--proton-support)
 
 **RustedUI** is a high-performance, zero-GC in-game user interface framework and visual showcase for **Stardew Valley 1.6+ (SMAPI 4.0+)** powered by an embedded **Rust + Taffy CSS Flexbox/Grid** engine and **MonoGame `SpriteBatch`** hardware rendering.

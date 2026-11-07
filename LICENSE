@@ -1,0 +1,49 @@
+# RustedUI Source-Available Software License (v1.0)
+
+Copyright (c) 2026 Mehmet Can. All rights reserved.
+
+---
+
+### 1. Free Grants (Player & Modder Library Exemption)
+Subject to the terms and conditions of this License, the Copyright Holder hereby grants to any person obtaining a copy of this software and associated documentation files (the "Software"):
+
+1. **Player Use:** A free, worldwide, non-exclusive, non-transferable, royalty-free license to download, install, execute, and use the Software for personal gameplay with Stardew Valley.
+2. **Library & Dependency Exemption (Free for Mod Authors):** Mod authors, game developers, and community creators are explicitly and freely permitted to:
+   - Use RustedUI as a library, framework, or dependency for their own Stardew Valley mods without any payment or royalties.
+   - Reference RustedUI public APIs, interfaces, FFI bindings, and markup/XML/TSX schemas in third-party mods.
+   - Publish mods that require, link against, or instruct users to install RustedUI.
+   - Distribute compiled mods that consume RustedUI, provided that they do not repackage the standalone RustedUI mod as their own product.
+
+---
+
+### 2. Redistribution & Mirroring Restrictions
+Except as expressly authorized under Section 1, the following acts are strictly prohibited without an explicit, paid, written commercial agreement from the Copyright Holder:
+
+1. **No Standalone Redistribution / Mirroring:** You may NOT re-upload, host, mirror, republish, syndicate, or redistribute the Software (whether in source, binary, compressed archive, or installer form) on any website, mod repository, Discord server, torrent network, cloud storage, or file-sharing service.
+2. **No Commercial Exploitation or Paywalls:** You may NOT sell, rent, lease, sub-license, monetarily monetize, gate behind paywalls (e.g., Patreon, Boosty, ad-links, paid downloads), or bundle the Software into commercial products.
+3. **No Plagiarism or Clone Distribution:** You may NOT strip copyright notices, rebrand, or republish the Software or modified forks thereof as a separate or competing UI framework without prior written consent.
+
+---
+
+### 3. Commercial Licensing & Paid Redistribution Requirement
+Any organization, platform operator, aggregator, commercial distributor, or individual who wishes to redistribute, re-host, mirror, bundle, or commercially utilize the Software outside the Free Grants specified in Section 1 **MUST** obtain a valid written Commercial Distribution License from the Copyright Holder and pay the required licensing fees and royalties.
+
+Unauthorized redistribution, mirroring, or commercial exploitation constitutes willful copyright infringement and breach of contract under international copyright laws, entitling the Copyright Holder to statutory damages, license fee recovery, legal expenses, and injunctive relief.
+
+For commercial licensing, redistribution rights, or enterprise partnerships, contact the author via the official GitHub repository:
+**https://github.com/MehmetCanWT/Rusted**
+
+---
+
+### 4. Official Distribution Channels
+The Software is officially and exclusively distributed through:
+- **GitHub:** https://github.com/MehmetCanWT/Rusted
+- **Nexus Mods:** Official RustedUI page by MehmetCan
+- **CurseForge:** Official RustedUI page by MehmetCan
+
+Users and modders must direct their players to download RustedUI directly from these authorized official channels.
+
+---
+
+### 5. Disclaimer of Warranty
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

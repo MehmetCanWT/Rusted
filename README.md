@@ -6,7 +6,7 @@
 [![Taffy](https://img.shields.io/badge/Layout-Taffy_v0.7_Flexbox_%26_Grid-blue)](#)
 [![SMAPI](https://img.shields.io/badge/Stardew_Valley_1.6+-SMAPI_4.1+-green)](#)
 [![Shadcn/UI](https://img.shields.io/badge/Design-Shadcn%2FUI_%2B_Tailwind_%2B_Lucide-purple)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+[![License](https://img.shields.io/badge/License-Source--Available%20(Free%20for%20Modders)-blue.svg)](LICENSE)
 
 **RustedUI (`Mehmetcan.RustedUI`)** brings modern web and desktop UI engineering (**Rust `SlotMap` + `Taffy v0.7` Flexbox/Grid**, **React/Vite `.tsx`**, **HTML + Tailwind CSS**, **Shadcn/UI**, **Lucide 16x16 Pixel-Art Icons**, and a **GPUI-inspired C# Fluent API**) into **Stardew Valley 1.6+**, rendering directly through MonoGame's hardware `SpriteBatch` with **0 Bytes of C# Garbage Collection per frame** and **~0.03–0.08 ms** layout/render time.
 
@@ -117,6 +117,9 @@ _view.BuildWithFluent(ui =>
 
 ---
 
-## 📄 License
+## 📄 License & Permissions
 
-Licensed under the **MIT License**. Crafted for the Stardew Valley 1.6+ modding community.
+RustedUI is licensed under the **RustedUI Source-Available Software License (v1.0)**:
+- **Free for Players**: Free to download, install, and use in your game.
+- **Free for Modders & Developers**: Free to use RustedUI as a library, framework, or dependency in your own Stardew Valley mods without any royalties or payments.
+- **Redistribution & Mirroring Restricted**: Re-hosting, mirror-uploading, republishing, or redistributing the standalone mod or binaries on third-party sites or commercial platforms requires an explicit written commercial license and paid royalty agreement with the author. See [LICENSE](LICENSE) for full details.

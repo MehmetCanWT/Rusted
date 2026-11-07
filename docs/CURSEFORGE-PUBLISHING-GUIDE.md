@@ -107,10 +107,11 @@ CurseForge moderasyonunun projeleri en sık reddettiği alanlardan biri logodur:
 
 ---
 
-### 1.5 Lisans Seçimi
-CurseForge formundaki açılır listeden projenin açık kaynak lisansı seçilmelidir:
-- **Seçilecek Değer:** `MIT License` (veya çoklu lisanslama ise `Apache 2.0`).
-- Lisans metni, GitHub deposundaki `LICENSE` dosyası ile harfiyen eşleşmelidir. CurseForge kapalı kaynak veya belirsiz lisanslı sistem ikililerini (native binary) reddeder.
+### 1.5 Lisans ve İzin Seçimi (License & Permissions)
+CurseForge formundaki lisans alanında:
+- **Seçilecek Değer:** `Custom License` (veya `All Rights Reserved` / `Author Terms`).
+- **Lisans Açıklaması:** RustedUI, mod yapımcıları için **ücretsiz kütüphane (Free Library Exemption)** izni sunarken, projenin başka sitelerde izinsiz aynalanmasını/yeniden paylaşılmasını kısıtlayan ve ticari yeniden paylaşım için telif/ödeme talep eden `RustedUI Source-Available Software License (v1.0)` ile lisanslanmıştır.
+- Lisans metni, GitHub deposundaki root [LICENSE](file:///home/mehmetcan/Code/Rusted/LICENSE) dosyası ile birebir örtüşmelidir. CurseForge moderatörleri native binary (.dll / .so) içeren projelerde açık ve şeffaf lisans metnini kontrol eder.
 
 ---
 
@@ -243,7 +244,7 @@ CurseForge açıklamalarının en üstüne profesyonel durum rozetleri yerleşti
 [![Stardew Valley](https://img.shields.io/badge/Stardew%20Valley-1.6%2B-blue?style=for-the-badge&logo=stardewvalley&logoColor=white)](https://stardewvalley.net/)
 [![SMAPI](https://img.shields.io/badge/SMAPI-4.1%2B-brightgreen?style=for-the-badge)](https://smapi.io/)
 [![Rust Engine](https://img.shields.io/badge/Rust-2021%20Zero--GC-orange?style=for-the-badge&logo=rust)](https://github.com/owner/Rusted)
-[![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-Source--Available%20(Free%20for%20Modders)-blue?style=for-the-badge)](LICENSE)
 
 </div>
 ```
@@ -462,7 +463,7 @@ This package contains pre-compiled native dynamic libraries (rusted_bridge.dll f
 - Purpose: Purely in-process mathematical computation for CSS Flexbox/Grid layout (via the MIT-licensed 'Taffy' crate). It performs zero OS network calls, zero file writing, and zero external process spawning. It only returns flat draw command buffers to Stardew Valley's MonoGame SpriteBatch.
 - VirusTotal Clean Scan: https://www.virustotal.com/gui/file/INSERT_YOUR_SHA256_HASH_HERE
 
-All dependencies and licenses (MIT License) are fully documented in the project description and root LICENSE file.
+All dependencies and licenses (RustedUI Source-Available License with Free Library Exemption) are fully documented in the project description and root LICENSE file.
 
 Thank you for your time and assistance!
 ```
@@ -484,7 +485,7 @@ Aşağıdaki şablon, CurseForge Açıklama (Description) alanına doğrudan yap
 [![Stardew Valley](https://img.shields.io/badge/Stardew%20Valley-1.6%2B-blue?style=for-the-badge&logo=stardewvalley&logoColor=white)](https://stardewvalley.net/)
 [![SMAPI](https://img.shields.io/badge/SMAPI-4.1%2B-brightgreen?style=for-the-badge)](https://smapi.io/)
 [![Rust](https://img.shields.io/badge/Rust-2021%20Engine-orange?style=for-the-badge&logo=rust)](https://github.com/owner/Rusted)
-[![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-Source--Available%20(Free%20for%20Modders)-blue?style=for-the-badge)](LICENSE)
 
 </div>
 
@@ -590,8 +591,10 @@ public class MyCustomModMenu : RustedMenu
 
 ## 🔒 Open Source & Safety Guarantee
 
-RustedUI is 100% open-source under the **MIT License**.
-* **Public Source Code:** [GitHub Repository](https://github.com/owner/Rusted)
+RustedUI is licensed under the **RustedUI Source-Available Software License (v1.0)**:
+* **Free for Players & Mod Authors:** 100% free to play, and free for developers to use as a library or dependency in their own mods.
+* **Redistribution Restricted:** Re-hosting, mirror redistribution, or commercial paywalls require an explicit commercial agreement with the author.
+* **Public Source Code:** [GitHub Repository](https://github.com/MehmetCanWT/Rusted)
 * **Zero Network Requests:** RustedUI does not connect to any remote server or track user telemetry.
 * **Reproducible CI Builds:** Pre-compiled native libraries inside `runtimes/` are compiled transparently using GitHub Actions.
 
@@ -611,7 +614,7 @@ RustedUI is 100% open-source under the **MIT License**.
 
 <div class="spoiler">
 <p><strong>Q: How do I report bugs or suggest themes?</strong></p>
-<p>A: Please submit issues and feature requests on our <a href="https://github.com/owner/Rusted/issues" target="_blank">GitHub Issue Tracker</a> or leave a comment on the CurseForge page.</p>
+<p>A: Please submit issues and feature requests on our <a href="https://github.com/MehmetCanWT/Rusted/issues" target="_blank">GitHub Issue Tracker</a> or leave a comment on the CurseForge page.</p>
 </div>
 
 ---
@@ -630,7 +633,7 @@ CurseForge Author Portal üzerinde "Submit" butonuna basmadan önce aşağıdaki
 - [ ] **1. Logo Doğrulaması:** En az 400x400 px, 1:1 kare PNG dosyası yüklendi; boş renk veya ConcernedApe telifli görsel içermiyor.
 - [ ] **2. Kategori Seçimi:** Primary Class: `Mods`, Primary Category: `Utility / Tools`, Secondary Category: `UI (User Interface)`.
 - [ ] **3. İngilizce İçerik:** Başlık, özet ve ana açıklama tamamen kurallara uygun İngilizce olarak girildi.
-- [ ] **4. Lisans Bütünlüğü:** CurseForge formunda `MIT License` seçildi ve GitHub repo lisansıyla birebir örtüşüyor.
+- [ ] **4. Lisans Bütünlüğü:** CurseForge formunda `Custom License` seçildi ve GitHub repo root LICENSE dosyasıyla örtüşüyor.
 - [ ] **5. ZIP Arşiv Mimarisi:** ZIP dosyası açıldığında içeride tek bir `Rusted.Smapi/` kök klasörü var; dosyalar zip köküne düzensiz saçılmamış.
 - [ ] **6. Yerel Kütüphaneler (Runtimes):** `runtimes/win-x64/native/rusted_bridge.dll` ve `runtimes/linux-x64/native/librusted_bridge.so` doğru alt dizinlere yerleştirildi.
 - [ ] **7. Dosya Görünen Adı (Display Name):** Sürüm adı SMAPI güncelleme regex'ine uygun olarak `RustedUI 1.0.0` (boşluklu ve semver formatında) yazıldı.
