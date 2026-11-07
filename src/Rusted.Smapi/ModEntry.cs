@@ -19,7 +19,7 @@ namespace Rusted.Smapi
         private RustedView? _featureTestView;
         private ModConfig _config = new();
 
-        private bool _showHud = true;
+        private bool _showHud = false;
         private bool _soundEnabled = true;
         private bool _useFluentMode;
         private UiThemeId _activeTheme = UiThemeId.PelicanClassic;

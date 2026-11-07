@@ -274,7 +274,7 @@ const MainMenuTemplate = () =>
             h("span", { class: "font-small text-sdv-dark" }, "In-Game Mini-HUD Overlay"),
             Switch({
               id: "chk_hud",
-              checked: true,
+              checked: false,
               onClick: "toggle_hud",
               tooltip: "Toggle the top-left RustedUI HUD overlay",
             })
