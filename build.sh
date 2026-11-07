@@ -23,4 +23,13 @@ cp target/x86_64-pc-windows-msvc/release/rusted_bridge.dll src/Rusted.Smapi/runt
 echo "==> [4/4] Building & deploying C# SMAPI mod (Rusted.Smapi)..."
 dotnet build src/Rusted.Smapi/Rusted.Smapi.csproj -c Release
 
+GAME_MODS_DIR="$HOME/.local/share/Steam/steamapps/common/Stardew Valley/Mods"
+if [ -d "$GAME_MODS_DIR" ]; then
+    echo "==> Deploying RustedUI to $GAME_MODS_DIR/RustedUI..."
+    rm -rf "$GAME_MODS_DIR/RustedUI" "$GAME_MODS_DIR/Rusted.Smapi"
+    unzip -q -o "src/Rusted.Smapi/bin/Release/net6.0/RustedUI 0.1.0.zip" -d "$GAME_MODS_DIR"
+    chmod -R u+rwX "$GAME_MODS_DIR/RustedUI"
+    cp "src/Rusted.Smapi/bin/Release/net6.0/RustedUI 0.1.0.zip" "RustedUI-0.1.0.zip"
+fi
+
 echo "✅ RustedUI build and deployment complete!"
