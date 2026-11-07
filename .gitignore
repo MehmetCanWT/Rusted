@@ -29,3 +29,6 @@ Thumbs.db
 *~
 *.swp
 *.swo
+
+# Internal Engineering Research Archive
+/research/
